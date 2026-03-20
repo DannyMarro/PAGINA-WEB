@@ -1,15 +1,49 @@
-<header>
-        <div class="header-content">
-            <a href="#" class="logo-link">
-                <img src="logo-porg.png" alt="Logo de Mi Nuevo Proyecto" class="main-logo">
-            </a>
-            <h1>Bienvenidos a Mi Nueva Página</h1>
-        </div>
-        <nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porg & Spirits | Restaurante & Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo-porg.png" alt="Logo" class="nav-logo">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#reserva">Reservas</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Porg & Spirits</h1>
+            <p>Coctelería de autor y sabores inolvidables</p>
+            <a href="#menu" class="btn-dorado">Ver Menú</a>
+        </div>
     </header>
+
+    <section id="galeria" class="seccion">
+        <h2>Nuestras Especialidades</h2>
+        <div class="grid-fotos">
+            <div class="foto-card">
+                <img src="bebida1.jpg" alt="Cóctel de la casa">
+                <p>Mojito Imperial</p>
+            </div>
+            <div class="foto-card">
+                <img src="plato1.jpg" alt="Cena gourmet">
+                <p>Cena Maridaje</p>
+            </div>
+            <div class="foto-card">
+                <img src="ambiente.jpg" alt="Nuestro local">
+                <p>Ambiente Exclusivo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Porg & Spirits - Guatemala. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
