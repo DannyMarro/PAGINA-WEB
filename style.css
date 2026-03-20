@@ -1,0 +1,32 @@
+header {
+    background: #24292e; /* Color estilo GitHub */
+    color: white;
+    padding: 1.5rem 0; /* Un poco más de espacio */
+    text-align: center;
+}
+
+/* --- Nuevas reglas para el Logo --- */
+.header-content {
+    display: flex; /* Para alinear el logo y el texto */
+    flex-direction: column; /* Apilados verticalmente */
+    align-items: center;
+    gap: 15px; /* Espacio entre logo y texto */
+    margin-bottom: 20px;
+}
+
+.main-logo {
+    max-height: 120px; /* Ajusta el tamaño de tu porg samurái */
+    border-radius: 50%; /* Opcional: lo hace circular */
+    border: 3px solid #2ea44f; /* Borde verde para contrastar */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+.main-logo:hover {
+    transform: scale(1.1); /* Se agranda un poco al pasar el mouse */
+}
+
+/* Modificación para el título */
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
