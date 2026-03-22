@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Pasión de Porc | Semana Santa ¡Resucita tu Sed!</title>
+    <title>La Pasión de Porc</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,9 +12,8 @@
 
     <audio id="bg-music" loop preload="auto">
         <source src="musica-suave.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
     </audio>
-    <button id="music-control" class="music-btn" title="Activar/Desactivar Música">🎵</button>
+    <button id="music-control" class="music-btn">🎵</button>
 
     <header class="header-principal">
         <nav class="navbar">
@@ -22,149 +21,80 @@
                 <span class="text-dorado">P</span>&<span class="text-morado">S</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#menu" class="nav-link">Menú</a></li>
-                <li><a href="#historia" class="nav-link">Historia</a></li>
-                <li><a href="#galeria" class="nav-link">Galería</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link lang" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="#menu" class="nav-link lang" data-es="Menú" data-en="Menu">Menú</a></li>
+                <li><a href="#historia" class="nav-link lang" data-es="Historia" data-en="History">Historia</a></li>
+                <li><a href="#galeria" class="nav-link lang" data-es="Galería" data-en="Gallery">Galería</a></li>
+                <li><a href="#contacto" class="nav-link lang" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li><button id="btn-lang" class="btn-idioma">EN</button></li>
             </ul>
         </nav>
     </header>
 
-
     <section id="inicio" class="hero fullscreen">
-        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+        <div class="hero-content" data-aos="zoom-out">
             <h1 class="titulo-principal">La Pasión de Porc</h1>
-            <p class="slogan">SEMANA SANTA <span class="resaltado">¡RESUCITA TU SED!</span></p>
-            <a href="#menu" class="btn-dorado">Explorar Sabores</a>
+            <p class="slogan">
+                <span class="lang" data-es="SEMANA SANTA" data-en="HOLY WEEK">SEMANA SANTA</span> 
+                <span class="resaltado lang" data-es="¡RESUCITA TU SED!" data-en="RESURRECT YOUR THIRST!">¡RESUCITA TU SED!</span>
+            </p>
+            <a href="#menu" class="btn-dorado lang" data-es="Explorar Sabores" data-en="Explore Flavors">Explorar Sabores</a>
         </div>
     </section>
-
 
     <section id="menu" class="seccion">
-        <h2 class="titulo-seccion" data-aos="fade-up">Nuestro Menú de Temporada</h2>
+        <h2 class="titulo-seccion lang" data-es="Menú de Temporada" data-en="Seasonal Menu">Menú de Temporada</h2>
         
-        <h3 class="subtitulo-seccion" data-aos="fade-up">Bebidas Sagradas</h3>
-      <div class="grid-menu">
-            <div class="card elegant-card" data-aos="fade-up">
-                <img src="fresco-ayote.jpg" alt="Fresco de ayote" class="card-img">
-                <div class="card-info">
-                    <h4>Fresco de ayote</h4>
-                    <p>Ayote cocido lentamente con canela, panela y un toque secreto de especias.</p>
-                </div>
-            </div>
-            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="tropica-colada.jpg" alt="Tropica colada" class="card-img">
-                <div class="card-info">
-                    <h4>Tropica colada</h4>
-                    <p>Crema de coco premium, jugo de piña fresca y un toque sutil de ron blanco.</p>
-                </div>
-            </div>
-            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="mojito-fresa.jpg" alt="Mojito de fresa" class="card-img">
-                <div class="card-info">
-                    <h4>Mojito de fresa</h4>
-                    <p>Fresas maceradas, menta fresca, lima, azúcar morena y soda burbujeante.</p>
-                </div>
-            </div>
-            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="paloma-fresa.jpg" alt="Paloma de fresa" class="card-img">
-                <div class="card-info">
-                    <h4>Paloma de fresa</h4>
-                    <p>Tequila reposado, puré de fresa natural, jugo de toronja rosa y borde de sal.</p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="subtitulo-seccion" data-aos="fade-up">Boquitas para Acompañar</h3>
+        <h3 class="subtitulo-seccion lang" data-es="Bebidas Sagradas" data-en="Sacred Drinks">Bebidas Sagradas</h3>
         <div class="grid-menu">
             <div class="card elegant-card" data-aos="fade-up">
-                <div class="card-img-placeholder border-morado">
-                    <span>[ FOTO BOQUITA 1 ]</span>
-                </div>
+                <img src="fresco-ayote.jpg" alt="Fresco" class="card-img">
                 <div class="card-info">
-                    <h4>Nombre de la Boquita ✨</h4>
-                    <p class="text-placeholder">Descripción elegante de tu boquita. Por ejemplo: "Delicados bocados de..."</p>
+                    <h4 class="lang" data-es="Fresco de ayote" data-en="Ayote Squash Drink">Fresco de ayote</h4>
+                    <p class="lang" data-es="Ayote cocido con canela y panela." data-en="Squash cooked with cinnamon and panela.">Ayote cocido con canela y panela.</p>
                 </div>
             </div>
-            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-img-placeholder border-morado">
-                    <span>[ FOTO BOQUITA 2 ]</span>
-                </div>
+            </div>
+
+        <h3 class="subtitulo-seccion lang" data-es="Nuestras Boquitas" data-en="Our Appetizers">Nuestras Boquitas</h3>
+        <div class="grid-menu">
+            <div class="card elegant-card" data-aos="fade-up">
+                <img src="boquita1.jpg" alt="Brocheta" class="card-img">
                 <div class="card-info">
-                    <h4>Delicia de Temporada 🍢</h4>
-                    <p class="text-placeholder">Descripción temporal. Ingredientes clave y su sabor único para el maridaje.</p>
+                    <h4 class="lang" data-es="Brocheta Rústica" data-en="Rustic Skewer">Brocheta Rústica</h4>
+                    <p class="lang" data-es="Jamón, queso y pan artesanal." data-en="Ham, cheese, and artisanal bread.">Jamón, queso y pan artesanal.</p>
+                </div>
+            </div>
+            <div class="card elegant-card" data-aos="fade-up">
+                <img src="boquita2.jpg" alt="Salchipapa" class="card-img">
+                <div class="card-info">
+                    <h4 class="lang" data-es="Salchipapa Gourmet" data-en="Gourmet Salchipapa">Salchipapa Gourmet</h4>
+                    <p class="lang" data-es="Salchicha premium y papas doradas." data-en="Premium sausage and golden potatoes.">Salchicha premium y papas doradas.</p>
+                </div>
+            </div>
+            <div class="card elegant-card" data-aos="fade-up">
+                <img src="boquita3.jpg" alt="Conitos" class="card-img">
+                <div class="card-info">
+                    <h4 class="lang" data-es="Crocantes de Maíz" data-en="Corn Crunchies">Crocantes de Maíz</h4>
+                    <p class="lang" data-es="Conitos de tortilla con frijol místico." data-en="Tortilla cones with mystic beans.">Conitos de tortilla con frijol místico.</p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <section id="historia" class="seccion bg-gris">
-        <h2 class="titulo-seccion" data-aos="fade-up">Crónicas de Sabor</h2>
-        
+        <h2 class="titulo-seccion lang" data-es="Crónicas de Sabor" data-en="Flavor Chronicles">Crónicas de Sabor</h2>
         <div class="historia-contenedor">
             <div class="bloque-historia" data-aos="fade-right">
-                <h4>Fresco de ayote</h4>
-                <p>Nuestra receta rinde homenaje a las cocinas tradicionales de Guatemala. Seleccionamos ayotes maduros, cocidos pacientemente con panela y canela en rama, recreando el sabor reconfortante que ha acompañado las procesiones durante generaciones.</p>
-            </div>
-            
-            <div class="bloque-historia" data-aos="fade-left">
-                <h4>Tropica colada</h4>
-                <p>Inspirada en el descanso merecido bajo el sol caribeño tras los días de reflexión. Elevamos la clásica receta con piñas seleccionadas en su punto justo de dulzura y una crema de coco artesanal, buscando el equilibrio perfecto entre frescura y cremosidad.</p>
-            </div>
-            
-            <div class="bloque-historia" data-aos="fade-right">
-                <h4>Mojito de fresa</h4>
-                <p>Nace de la búsqueda de un contraste vibrante. Fusionamos la técnica clásica del mojito cubano con la dulzura intensa de las fresas locales. La menta fresca despierta los sentidos, mientras que la fresa aporta un color y sabor que "resucita" el paladar.</p>
-            </div>
-            
-            <div class="bloque-historia" data-aos="fade-left">
-                <h4>Paloma de fresa</h4>
-                <p>Nuestra reinterpretación moderna de un clásico mexicano. Quisimos darle un giro sofisticado y sutilmente dulce usando fresas naturales que equilibran el carácter del tequila reposado y la acidez de la toronja.</p>
+                <h4 class="lang" data-es="Herencia de Guatemala" data-en="Guatemalan Heritage">Herencia de Guatemala</h4>
+                <p class="lang" 
+                   data-es="Nuestras recetas rinden homenaje a la tradición local." 
+                   data-en="Our recipes pay tribute to local traditions.">
+                   Nuestras recetas rinden homenaje a la tradición local.
+                </p>
             </div>
         </div>
     </section>
-
-
-    <section id="galeria" class="seccion">
-        <h2 class="titulo-seccion" data-aos="fade-up">Instantes de Pasión</h2>
-        <div class="grid-galeria">
-            <div class="galeria-item placeholder-item" data-aos="zoom-in">
-                <span>[ FOTO GALERÍA 1 ]</span>
-            </div>
-            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="100">
-                <span>[ FOTO GALERÍA 2 ]</span>
-            </div>
-            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="200">
-                <span>[ FOTO GALERÍA 3 ]</span>
-            </div>
-            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="300">
-                <span>[ FOTO GALERÍA 4 ]</span>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contacto" class="seccion bg-gris text-center">
-        <h2 class="titulo-seccion" data-aos="fade-up">Conéctanos</h2>
-        <div class="contacto-info" data-aos="fade-up">
-            <h4 class="text-dorado">Grupo: Los Resucitados</h4>
-            <p>Integrantes:</p>
-            <ul class="lista-integrantes">
-                <li>Integrante 1 - Diseño & Lógica</li>
-                <li>Integrante 2 - Contenido & Redes</li>
-                <li>Integrante 3 - Documentación</li>
-            </ul>
-            <p class="margin-top-20">Sigue nuestra pasión en redes:</p>
-            <p class="text-morado">@LaPasionDePorc_GT</p>
-        </div>
-    </section>
-
-
-    <footer>
-        <p>&copy; 2026 La Pasión de Porc - Proyecto Web Premium. Guatemala.</p>
-    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
