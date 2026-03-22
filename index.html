@@ -3,47 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porg & Spirits | Restaurante & Bar</title>
+    <title>La Pasión de Porc | Semana Santa ¡Resucita tu Sed!</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="logo-porg.png" alt="Logo" class="nav-logo">
-            <ul>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#reserva">Reservas</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Porg & Spirits</h1>
-            <p>Coctelería de autor y sabores inolvidables</p>
-            <a href="#menu" class="btn-dorado">Ver Menú</a>
-        </div>
-    </header>
 
-    <section id="galeria" class="seccion">
-        <h2>Nuestras Especialidades</h2>
-        <div class="grid-fotos">
-            <div class="foto-card">
-                <img src="bebida1.jpg" alt="Cóctel de la casa">
-                <p>Mojito Imperial</p>
+    <audio id="bg-music" loop preload="auto">
+        <source src="musica-suave.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <button id="music-control" class="music-btn" title="Activar/Desactivar Música">🎵</button>
+
+    <div class="menu-hamburguesa" id="menu-toggle">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#menu" class="nav-link">Menú</a></li>
+            <li><a href="#historia" class="nav-link">Historia</a></li>
+            <li><a href="#galeria" class="nav-link">Galería</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+
+    <section id="inicio" class="hero fullscreen">
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <h1 class="titulo-principal">La Pasión de Porc</h1>
+            <p class="slogan">SEMANA SANTA <span class="resaltado">¡RESUCITA TU SED!</span></p>
+            <a href="#menu" class="btn-dorado">Explorar Sabores</a>
+        </div>
+    </section>
+
+
+    <section id="menu" class="seccion">
+        <h2 class="titulo-seccion" data-aos="fade-up">Nuestro Menú de Temporada</h2>
+        
+        <h3 class="subtitulo-seccion" data-aos="fade-up">Bebidas Sagradas</h3>
+        <div class="grid-menu">
+            <div class="card elegant-card" data-aos="fade-up">
+                <div class="card-img-placeholder">
+                    <span>[ IMAGEN: fresco-ayote.jpg ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Fresco de ayote</h4>
+                    <p>Tradición líquida. Ayote cocido lentamente con canela, panela y un toque secreto de especias.</p>
+                </div>
             </div>
-            <div class="foto-card">
-                <img src="plato1.jpg" alt="Cena gourmet">
-                <p>Cena Maridaje</p>
+            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img-placeholder">
+                    <span>[ IMAGEN: tropica-colada.jpg ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Tropica colada</h4>
+                    <p>El paraíso en un vaso. Crema de coco premium, jugo de piña fresca y un toque sutil de ron blanco (opcional).</p>
+                </div>
             </div>
-            <div class="foto-card">
-                <img src="ambiente.jpg" alt="Nuestro local">
-                <p>Ambiente Exclusivo</p>
+            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img-placeholder">
+                    <span>[ IMAGEN: mojito-fresa.jpg ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Mojito de fresa</h4>
+                    <p>Frescura mística. Fresas maceradas, menta fresca, lima, azúcar morena y soda burbujeante.</p>
+                </div>
+            </div>
+            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-img-placeholder">
+                    <span>[ IMAGEN: paloma-fresa.jpg ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Paloma de fresa</h4>
+                    <p>Sofisticación vibrante. Tequila reposado, puré de fresa natural, jugo de toronja rosa y borde de sal de mar.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="subtitulo-seccion" data-aos="fade-up">Boquitas para Acompañar</h3>
+        <div class="grid-menu">
+            <div class="card elegant-card" data-aos="fade-up">
+                <div class="card-img-placeholder text-morado">
+                    <span>[ ESPACIO PARA FOTO BOQUITA 1 ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Nombre de la Boquita ✨</h4>
+                    <p class="text-placeholder">Aquí irá la descripción elegante de tu boquita. Por ejemplo: "Delicados bocados de..."</p>
+                </div>
+            </div>
+            <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img-placeholder text-morado">
+                    <span>[ ESPACIO PARA FOTO BOQUITA 2 ]</span>
+                </div>
+                <div class="card-info">
+                    <h4>Delicia de Temporada 🍢</h4>
+                    <p class="text-placeholder">Descripción temporal. Ingredientes clave y su sabor único para el maridaje.</p>
+                </div>
             </div>
         </div>
     </section>
 
+
+    <section id="historia" class="seccion bg-gris">
+        <h2 class="titulo-seccion" data-aos="fade-up">Crónicas de Sabor</h2>
+        
+        <div class="historia-contenedor">
+            <div class="bloque-historia" data-aos="fade-right">
+                <h4>Fresco de ayote</h4>
+                <p>Nuestra receta rinde homenaje a las cocinas tradicionales de Guatemala. Seleccionamos ayotes maduros, cocidos pacientemente con panela y canela en rama, recreando el sabor reconfortante que ha acompañado las procesiones durante generaciones. Un sorbo de historia pura.</p>
+            </div>
+            
+            <div class="bloque-historia" data-aos="fade-left">
+                <h4>Tropica colada</h4>
+                <p>Inspirada en el descanso merecido bajo el sol caribeño tras los días de reflexión. Nuestra Tropica Colada eleva la clásica receta con piñas seleccionadas en su punto justo de dulzura y una crema de coco artesanal, buscando el equilibrio perfecto entre frescura y cremosidad.</p>
+            </div>
+            
+            <div class="bloque-historia" data-aos="fade-right">
+                <h4>Mojito de fresa</h4>
+                <p>Nace de la búsqueda de un contraste vibrante. Fusionamos la técnica clásica del mojito cubano con la dulzura intensa de las fresas locales. La menta fresca despierta los sentidos, mientras que la fresa aporta un color y sabor que "resucita" el paladar más exigente.</p>
+            </div>
+            
+            <div class="bloque-historia" data-aos="fade-left">
+                <h4>Paloma de fresa</h4>
+                <p>Nuestra reinterpretación moderna de un clásico mexicano. Quisimos darle un giro sofisticado y sutilmente dulce usando fresas naturales que equilibran el carácter del tequila reposado y la acidez de la toronja. Una bebida audaz para quienes buscan algo nuevo esta Semana Santa.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="galeria" class="seccion">
+        <h2 class="titulo-seccion" data-aos="fade-up">Instantes de Pasión</h2>
+        <div class="grid-galeria">
+            <div class="galeria-item placeholder-item" data-aos="zoom-in">
+                <span>[ FOTO GALERÍA 1 ]</span>
+            </div>
+            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="100">
+                <span>[ FOTO GALERÍA 2 ]</span>
+            </div>
+            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="200">
+                <span>[ FOTO GALERÍA 3 ]</span>
+            </div>
+            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="300">
+                <span>[ FOTO GALERÍA 4 ]</span>
+            </div>
+            <div class="galeria-item placeholder-item" data-aos="zoom-in">
+                <span>[ FOTO GALERÍA 5 ]</span>
+            </div>
+            <div class="galeria-item placeholder-item" data-aos="zoom-in" data-aos-delay="100">
+                <span>[ FOTO GALERÍA 6 ]</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="seccion bg-gris text-center">
+        <h2 class="titulo-seccion" data-aos="fade-up">Conéctanos</h2>
+        <div class="contacto-info" data-aos="fade-up">
+            <h4 class="text-dorado">Grupo: Los Resucitados</h4>
+            <p>Integrantes:</p>
+            <ul class="lista-integrantes">
+                <li>Integrante 1 - Diseño & Lógica</li>
+                <li>Integrante 2 - Contenido & Redes</li>
+                <li>Integrante 3 - Documentación</li>
+            </ul>
+            <p class="margin-top-20">Sigue nuestra pasión en redes:</p>
+            <p class="text-morado">@LaPasionDePorc_GT</p>
+        </div>
+    </section>
+
+
     <footer>
-        <p>&copy; 2026 Porg & Spirits - Guatemala. Todos los derechos reservados.</p>
+        <p>&copy; 2026 La Pasión de Porc - Proyecto Web Premium. Guatemala.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
