@@ -22,11 +22,12 @@
                 <span class="text-dorado">P</span>&<span class="text-morado">S</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#menu" class="nav-link">Menú</a></li>
-                <li><a href="#historia" class="nav-link">Historia</a></li>
-                <li><a href="#galeria" class="nav-link">Galería</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link lang" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="#menu" class="nav-link lang" data-es="Menú" data-en="Menu">Menú</a></li>
+                <li><a href="#historia" class="nav-link lang" data-es="Historia" data-en="History">Historia</a></li>
+                <li><a href="#galeria" class="nav-link lang" data-es="Galería" data-en="Gallery">Galería</a></li>
+                <li><a href="#contacto" class="nav-link lang" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li><button id="btn-lang" class="btn-idioma">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -35,118 +36,106 @@
     <section id="inicio" class="hero fullscreen">
         <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
             <h1 class="titulo-principal">La Pasión de Porc</h1>
-            <p class="slogan">SEMANA SANTA <span class="resaltado">¡RESUCITA TU SED!</span></p>
-            <a href="#menu" class="btn-dorado">Explorar Sabores</a>
+            <p class="slogan">
+                <span class="lang" data-es="SEMANA SANTA" data-en="HOLY WEEK">SEMANA SANTA</span> 
+                <span class="resaltado lang" data-es="¡RESUCITA TU SED!" data-en="RESURRECT YOUR THIRST!">¡RESUCITA TU SED!</span>
+            </p>
+            <a href="#menu" class="btn-dorado lang" data-es="Explorar Sabores" data-en="Explore Flavors">Explorar Sabores</a>
         </div>
     </section>
 
 
     <section id="menu" class="seccion">
-        <h2 class="titulo-seccion" data-aos="fade-up">Nuestro Menú de Temporada</h2>
+        <h2 class="titulo-seccion lang" data-aos="fade-up" data-es="Nuestro Menú de Temporada" data-en="Our Seasonal Menu">Nuestro Menú de Temporada</h2>
         
-        <h3 class="subtitulo-seccion" data-aos="fade-up">Bebidas Sagradas</h3>
-       <div class="grid-menu">
+        <h3 class="subtitulo-seccion lang" data-aos="fade-up" data-es="Bebidas Sagradas" data-en="Sacred Drinks">Bebidas Sagradas</h3>
+        <div class="grid-menu">
             <div class="card elegant-card" data-aos="fade-up">
                 <img src="fresco-ayote.jpg" alt="Fresco de ayote" class="card-img">
                 <div class="card-info">
-                    <h4>Fresco de ayote</h4>
-                    <p>Ayote cocido lentamente con canela, panela y un toque secreto de especias.</p>
+                    <h4 class="lang" data-es="Fresco de ayote" data-en="Ayote Squash Drink">Fresco de ayote</h4>
+                    <p class="lang" data-es="Ayote cocido lentamente con canela, panela y un toque secreto de especias." data-en="Squash slowly cooked with cinnamon, panela, and a secret touch of spices.">Ayote cocido lentamente con canela, panela y un toque secreto de especias.</p>
                 </div>
             </div>
             <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
                 <img src="tropica-colada.jpg" alt="Tropica colada" class="card-img">
                 <div class="card-info">
-                    <h4>Tropica colada</h4>
-                    <p>Crema de coco premium, jugo de piña fresca y un toque sutil de ron blanco.</p>
+                    <h4 class="lang" data-es="Tropica colada" data-en="Tropic Colada">Tropica colada</h4>
+                    <p class="lang" data-es="Crema de coco premium, jugo de piña fresca y un toque sutil de ron blanco." data-en="Premium coconut cream, fresh pineapple juice, and a subtle touch of white rum.">Crema de coco premium, jugo de piña fresca y un toque sutil de ron blanco.</p>
                 </div>
             </div>
             <div class="card elegant-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="mojito-fresa.jpg" alt="Mojito de fresa" class="card-img">
                 <div class="card-info">
-                    <h4>Mojito de fresa</h4>
-                    <p>Fresas maceradas, menta fresca, lima, azúcar morena y soda burbujeante.</p>
+                    <h4 class="lang" data-es="Mojito de fresa" data-en="Strawberry Mojito">Mojito de fresa</h4>
+                    <p class="lang" data-es="Fresas maceradas, menta fresca, lima, azúcar morena y soda burbujeante." data-en="Macerated strawberries, fresh mint, lime, brown sugar, and sparkling soda.">Fresas maceradas, menta fresca, lima, azúcar morena y soda burbujeante.</p>
                 </div>
             </div>
             <div class="card elegant-card" data-aos="fade-up" data-aos-delay="300">
                 <img src="paloma-fresa.jpg" alt="Paloma de fresa" class="card-img">
                 <div class="card-info">
-                    <h4>Paloma de fresa</h4>
-                    <p>Tequila reposado, puré de fresa natural, jugo de toronja rosa y borde de sal.</p>
+                    <h4 class="lang" data-es="Paloma de fresa" data-en="Strawberry Paloma">Paloma de fresa</h4>
+                    <p class="lang" data-es="Tequila reposado, puré de fresa natural, jugo de toronja rosa y borde de sal." data-en="Reposado tequila, natural strawberry puree, pink grapefruit juice, and a salt rim.">Tequila reposado, puré de fresa natural, jugo de toronja rosa y borde de sal.</p>
                 </div>
             </div>
         </div>
-        <h3 class="subtitulo-seccion" data-aos="fade-up">Boquitas para Acompañar</h3>
-       <div class="grid-menu">
-            
+
+        <h3 class="subtitulo-seccion lang" data-aos="fade-up" data-es="Boquitas para Acompañar" data-en="Appetizers to Pair">Boquitas para Acompañar</h3>
+        <div class="grid-menu">
             <div class="card elegant-card" data-aos="fade-up">
                 <img src="boquita1.jpg" alt="Brocheta Rústica" class="card-img">
                 <div class="card-info">
                     <h4 class="lang" data-es="Brocheta Rústica de la Casa 🍢" data-en="House Rustic Skewer 🍢">Brocheta Rústica de la Casa 🍢</h4>
-                    <p class="lang" 
-                       data-es="Delicada combinación de jamón seleccionado, queso premium y pan artesanal tostado a la perfección." 
-                       data-en="A delicate combination of selected ham, premium cheese, and perfectly toasted artisanal bread.">
-                       Delicada combinación de jamón seleccionado, queso premium y pan artesanal tostado a la perfección.
-                    </p>
+                    <p class="lang" data-es="Delicada combinación de jamón seleccionado, queso premium y pan artesanal tostado a la perfección." data-en="A delicate combination of selected ham, premium cheese, and perfectly toasted artisanal bread.">Delicada combinación de jamón seleccionado, queso premium y pan artesanal tostado a la perfección.</p>
                 </div>
             </div>
-
             <div class="card elegant-card" data-aos="fade-up" data-aos-delay="100">
                 <img src="boquita2.jpg" alt="Salchipapa Gourmet" class="card-img">
                 <div class="card-info">
                     <h4 class="lang" data-es="Dúo de Salchicha y Papas Gourmet 🍟" data-en="Gourmet Sausage & Fries Duo 🍟">Dúo de Salchicha y Papas Gourmet 🍟</h4>
-                    <p class="lang" 
-                       data-es="Papas crujientes bañadas en salsas artesanales con rodajas de salchicha premium de la región." 
-                       data-en="Crispy fries drizzled in artisanal sauces with slices of premium regional sausage.">
-                       Papas crujientes bañadas en salsas artesanales con rodajas de salchicha premium de la región.
-                    </p>
+                    <p class="lang" data-es="Papas crujientes bañadas en salsas artesanales con rodajas de salchicha premium de la región." data-en="Crispy fries drizzled in artisanal sauces with slices of premium regional sausage.">Papas crujientes bañadas en salsas artesanales con rodajas de salchicha premium de la región.</p>
                 </div>
             </div>
-
             <div class="card elegant-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="boquita3.jpg" alt="Conitos de Maíz" class="card-img">
                 <div class="card-info">
                     <h4 class="lang" data-es="Crocantes de Maíz y Frijol Místico 🌽" data-en="Mystic Bean & Corn Crunchies 🌽">Crocantes de Maíz y Frijol Místico 🌽</h4>
-                    <p class="lang" 
-                       data-es="Conitos de tortilla artesanal rellenos de una suave crema de frijoles negros con toque de queso local." 
-                       data-en="Artisanal tortilla cones filled with a smooth black bean cream and a touch of local cheese.">
-                       Conitos de tortilla artesanal rellenos de una suave crema de frijoles negros con toque de queso local.
-                    </p>
+                    <p class="lang" data-es="Conitos de tortilla artesanal rellenos de una suave crema de frijoles negros con toque de queso local." data-en="Artisanal tortilla cones filled with a smooth black bean cream and a touch of local cheese.">Conitos de tortilla artesanal rellenos de una suave crema de frijoles negros con toque de queso local.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
 
     <section id="historia" class="seccion bg-gris">
-        <h2 class="titulo-seccion" data-aos="fade-up">Crónicas de Sabor</h2>
+        <h2 class="titulo-seccion lang" data-aos="fade-up" data-es="Crónicas de Sabor" data-en="Flavor Chronicles">Crónicas de Sabor</h2>
         
         <div class="historia-contenedor">
             <div class="bloque-historia" data-aos="fade-right">
-                <h4>Fresco de ayote</h4>
-                <p>Nuestra receta rinde homenaje a las cocinas tradicionales de Guatemala. Seleccionamos ayotes maduros, cocidos pacientemente con panela y canela en rama, recreando el sabor reconfortante que ha acompañado las procesiones durante generaciones.</p>
+                <h4 class="lang" data-es="Fresco de ayote" data-en="Ayote Squash Drink">Fresco de ayote</h4>
+                <p class="lang" data-es="Nuestra receta rinde homenaje a las cocinas tradicionales de Guatemala. Seleccionamos ayotes maduros, cocidos pacientemente con panela y canela en rama, recreando el sabor reconfortante que ha acompañado las procesiones durante generaciones." data-en="Our recipe pays tribute to the traditional kitchens of Guatemala. We select ripe squash, patiently cooked with panela and cinnamon sticks, recreating the comforting flavor that has accompanied processions for generations.">Nuestra receta rinde homenaje a las cocinas tradicionales de Guatemala. Seleccionamos ayotes maduros, cocidos pacientemente con panela y canela en rama, recreando el sabor reconfortante que ha acompañado las procesiones durante generaciones.</p>
             </div>
             
             <div class="bloque-historia" data-aos="fade-left">
-                <h4>Tropica colada</h4>
-                <p>Inspirada en el descanso merecido bajo el sol caribeño tras los días de reflexión. Elevamos la clásica receta con piñas seleccionadas en su punto justo de dulzura y una crema de coco artesanal, buscando el equilibrio perfecto entre frescura y cremosidad.</p>
+                <h4 class="lang" data-es="Tropica colada" data-en="Tropic Colada">Tropica colada</h4>
+                <p class="lang" data-es="Inspirada en el descanso merecido bajo el sol caribeño tras los días de reflexión. Elevamos la clásica receta con piñas seleccionadas en su punto justo de dulzura y una crema de coco artesanal, buscando el equilibrio perfecto entre frescura y cremosidad." data-en="Inspired by the well-deserved rest under the Caribbean sun after days of reflection. We elevate the classic recipe with pineapples selected at their peak of sweetness and artisanal coconut cream, seeking the perfect balance between freshness and creaminess.">Inspirada en el descanso merecido bajo el sol caribeño tras los días de reflexión. Elevamos la clásica receta con piñas seleccionadas en su punto justo de dulzura y una crema de coco artesanal, buscando el equilibrio perfecto entre frescura y cremosidad.</p>
             </div>
             
             <div class="bloque-historia" data-aos="fade-right">
-                <h4>Mojito de fresa</h4>
-                <p>Nace de la búsqueda de un contraste vibrante. Fusionamos la técnica clásica del mojito cubano con la dulzura intensa de las fresas locales. La menta fresca despierta los sentidos, mientras que la fresa aporta un color y sabor que "resucita" el paladar.</p>
+                <h4 class="lang" data-es="Mojito de fresa" data-en="Strawberry Mojito">Mojito de fresa</h4>
+                <p class="lang" data-es="Nace de la búsqueda de un contraste vibrante. Fusionamos la técnica clásica del mojito cubano con la dulzura intensa de las fresas locales. La menta fresca despierta los sentidos, mientras que la fresa aporta un color y sabor que 'resucita' el paladar." data-en="Born from the search for a vibrant contrast. We fuse the classic Cuban mojito technique with the intense sweetness of local strawberries. Fresh mint awakens the senses, while the strawberry provides a color and flavor that 'resurrects' the palate.">Nace de la búsqueda de un contraste vibrante. Fusionamos la técnica clásica del mojito cubano con la dulzura intensa de las fresas locales. La menta fresca despierta los sentidos, mientras que la fresa aporta un color y sabor que "resucita" el paladar.</p>
             </div>
             
             <div class="bloque-historia" data-aos="fade-left">
-                <h4>Paloma de fresa</h4>
-                <p>Nuestra reinterpretación moderna de un clásico mexicano. Quisimos darle un giro sofisticado y sutilmente dulce usando fresas naturales que equilibran el carácter del tequila reposado y la acidez de la toronja.</p>
+                <h4 class="lang" data-es="Paloma de fresa" data-en="Strawberry Paloma">Paloma de fresa</h4>
+                <p class="lang" data-es="Nuestra reinterpretación moderna de un clásico mexicano. Quisimos darle un giro sofisticado y sutilmente dulce usando fresas naturales que equilibran el carácter del tequila reposado y la acidez de la toronja." data-en="Our modern reinterpretation of a Mexican classic. We wanted to give it a sophisticated and subtly sweet twist using natural strawberries that balance the character of reposado tequila and the acidity of grapefruit.">Nuestra reinterpretación moderna de un clásico mexicano. Quisimos darle un giro sofisticado y sutilmente dulce usando fresas naturales que equilibran el carácter del tequila reposado y la acidez de la toronja.</p>
             </div>
         </div>
     </section>
 
 
     <section id="galeria" class="seccion">
-        <h2 class="titulo-seccion" data-aos="fade-up">Instantes de Pasión</h2>
+        <h2 class="titulo-seccion lang" data-aos="fade-up" data-es="Instantes de Pasión" data-en="Moments of Passion">Instantes de Pasión</h2>
       <div class="grid-galeria">
             <div class="galeria-item" data-aos="zoom-in">
                 <img src="galeria1.jpg" alt="Ambiente" class="galeria-img">
@@ -165,23 +154,23 @@
 
 
     <section id="contacto" class="seccion bg-gris text-center">
-        <h2 class="titulo-seccion" data-aos="fade-up">Conéctanos</h2>
+        <h2 class="titulo-seccion lang" data-aos="fade-up" data-es="Conéctanos" data-en="Connect with Us">Conéctanos</h2>
         <div class="contacto-info" data-aos="fade-up">
-            <h4 class="text-dorado">Grupo: Los Resucitados</h4>
-            <p>Integrantes:</p>
+            <h4 class="text-dorado lang" data-es="Grupo: Los Resucitados" data-en="Group: The Resurrected">Grupo: Los Resucitados</h4>
+            <p class="lang" data-es="Integrantes:" data-en="Team members:">Integrantes:</p>
             <ul class="lista-integrantes">
                 <li>Integrante 1 - Diseño & Lógica</li>
                 <li>Integrante 2 - Contenido & Redes</li>
                 <li>Integrante 3 - Documentación</li>
             </ul>
-            <p class="margin-top-20">Sigue nuestra pasión en redes:</p>
+            <p class="margin-top-20 lang" data-es="Sigue nuestra pasión en redes:" data-en="Follow our passion on social media:">Sigue nuestra pasión en redes:</p>
             <p class="text-morado">@LaPasionDePorc_GT</p>
         </div>
     </section>
 
 
     <footer>
-        <p>&copy; 2026 La Pasión de Porc - Proyecto Web Premium. Guatemala.</p>
+        <p class="lang" data-es="&copy; 2026 La Pasión de Porc - Proyecto Web Premium. Guatemala." data-en="&copy; 2026 La Pasión de Porc - Premium Web Project. Guatemala.">&copy; 2026 La Pasión de Porc - Proyecto Web Premium. Guatemala.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
