@@ -342,3 +342,25 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
 .galeria-item:hover .galeria-img {
     transform: scale(1.1); /* Efecto zoom cool al pasar el mouse */
 }
+.precio-unico-banner {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: var(--dorado-principal);
+    font-size: 1.5rem;
+}
+
+.precio-highlight {
+    font-size: 3rem;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background: var(--morado-principal);
+    margin: 10px auto;
+}
