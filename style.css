@@ -391,3 +391,41 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
     line-height: 1.6;
     color: #ccc;
 }
+/* Estilo para la nueva sección de Tradición */
+.seccion-tradicion {
+    padding: 100px 15%;
+    background: #0d0d0d;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.adorno-sacro {
+    color: var(--dorado-principal);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenido-tradicion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.texto-envolvente p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+    font-style: italic; /* Le da ese toque de "crónica" */
+}
+
+/* Decoración extra para el primer párrafo */
+.texto-envolvente p::first-letter {
+    font-size: 3rem;
+    color: var(--dorado-principal);
+    font-family: 'Playfair Display', serif;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
