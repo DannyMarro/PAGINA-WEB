@@ -364,3 +364,30 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
     background: var(--morado-principal);
     margin: 10px auto;
 }
+.card-identidad {
+    background: #1a1a1a; /* Un fondo oscuro elegante */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--dorado-principal);
+    transition: 0.3s;
+}
+
+.card-identidad:hover {
+    background: #252525;
+    transform: translateY(-5px);
+}
+
+.contenido-identidad h3 {
+    color: var(--dorado-principal);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contenido-identidad p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
