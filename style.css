@@ -473,3 +473,10 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
     margin: 40px auto;
     opacity: 0.5;
 }
+html {
+    scroll-behavior: smooth; /* Esto hace que el salto a cada sección sea suave y elegante */
+}
+
+.nav-menu {
+    gap: 15px; /* Ajusta el espacio entre los botones del menú */
+}
