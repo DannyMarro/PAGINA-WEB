@@ -402,3 +402,47 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
     margin-right: 10px;
     line-height: 1;
 }
+/* Estilos para la Tabla de Precios */
+.contenedor-precios {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 40px;
+    border: 2px solid var(--dorado-principal);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.precio-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.nombre-producto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.puntos {
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--dorado-principal);
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.valor-precio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--dorado-principal);
+    font-size: 1.3rem;
+}
+
+.divisor-precios {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--dorado-principal), transparent);
+    margin: 30px 0;
+    opacity: 0.3;
+}
