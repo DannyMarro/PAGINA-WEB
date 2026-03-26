@@ -402,47 +402,74 @@ footer { text-align: center; padding: 40px; background: #080808; color: #666; fo
     margin-right: 10px;
     line-height: 1;
 }
-/* Estilos para la Tabla de Precios */
+/* --- TABLA DE PRECIOS CON EL ESTILO DE LA PASIÓN --- */
 .contenedor-precios {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #1a1a1a;
-    padding: 40px;
-    border: 2px solid var(--dorado-principal);
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 750px;
+    margin: 50px auto;
+    background: var(--negro-tarjeta); /* Usa tu variable exacta */
+    padding: 60px 40px;
+    border: 2px solid var(--dorado-principal); /* Oro Elegante */
+    border-radius: 12px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+    position: relative;
+    transition: var(--transicion-suave);
+}
+
+.contenedor-precios:hover {
+    border-color: var(--dorado-hover);
+    transform: translateY(-5px);
+}
+
+/* El adorno sacro superior */
+.contenedor-precios::before {
+    content: "◈";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--negro-fondo);
+    color: var(--dorado-principal);
+    padding: 0 20px;
+    font-size: 1.8rem;
+    font-family: var(--fuente-titulos);
 }
 
 .precio-item {
     display: flex;
-    align-items: baseline;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15); /* Basado en tu dorado */
 }
 
 .nombre-producto {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #fff;
-    white-space: nowrap;
-}
-
-.puntos {
-    flex-grow: 1;
-    border-bottom: 1px dotted var(--dorado-principal);
-    margin: 0 10px;
-    opacity: 0.5;
+    font-family: var(--fuente-titulos);
+    font-size: 1.4rem;
+    color: var(--blanco);
+    letter-spacing: 0.5px;
 }
 
 .valor-precio {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-family: var(--fuente-texto);
+    font-weight: 900;
     color: var(--dorado-principal);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* La Cimarrona resaltada */
+.highlight-item {
+    background: linear-gradient(90deg, rgba(106, 27, 154, 0.1), transparent);
+    border-left: 4px solid var(--morado-principal);
+    padding-left: 15px;
+    margin-left: -15px;
 }
 
 .divisor-precios {
     height: 1px;
     background: linear-gradient(to right, transparent, var(--dorado-principal), transparent);
-    margin: 30px 0;
-    opacity: 0.3;
+    width: 80%;
+    margin: 40px auto;
+    opacity: 0.5;
 }
